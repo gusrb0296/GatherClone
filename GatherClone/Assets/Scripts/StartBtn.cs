@@ -23,7 +23,7 @@ public class StartBtn : MonoBehaviour
     public void InputName()
     {
         _playerName = PlayerNameInput.text;
-        PlayerPrefs.SetString("CurrentPlayerName", _playerName);
+        PlayerPrefs.SetString("PlayerName", _playerName);
         Debug.Log(_playerName);
     }
 
