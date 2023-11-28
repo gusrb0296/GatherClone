@@ -525,6 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364383430}
   - component: {fileID: 364383431}
+  - component: {fileID: 364383432}
   m_Layer: 0
   m_Name: penguin_idle_01
   m_TagString: Untagged
@@ -599,6 +600,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &364383432
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364383429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba9e8b2f4d5d07f4e84e9f05710f122c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -38766,7 +38788,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2}
+  m_Size: {x: 1.62, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &1855679233
 Rigidbody2D:
@@ -38820,6 +38842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d26a387408b65e46b53c80daf413316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Anim: {fileID: 364383432}
 --- !u!114 &1855679236
 MonoBehaviour:
   m_ObjectHideFlags: 0

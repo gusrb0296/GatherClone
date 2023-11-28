@@ -15,16 +15,19 @@ public class Movement : MonoBehaviour
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Start()
     {
+        
         _controller.OnMoveEvent += Move;
     }
 
     private void Move(Vector2 direction)
     {
         _moveDirection = direction;
+        
     }
 
     private void FixedUpdate()
