@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private CharacterController _controller;
-
+    [SerializeField] private Animator _Anim;
     [SerializeField] private int _moveSpeed = 250;
     
     private Vector2 _moveDirection = Vector2.zero;
@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        //_Anim = GetComponent<Animator>();
         
     }
 
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         ApplyMovement(_moveDirection);
+        _Anim.SetFloat("IsWalk", _moveDirection.magnitude);
     }
 
     private void ApplyMovement(Vector2 direction)
