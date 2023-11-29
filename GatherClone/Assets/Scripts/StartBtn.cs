@@ -24,6 +24,7 @@ public class StartBtn : MonoBehaviour
     {
         _playerName = PlayerNameInput.text;
         PlayerPrefs.SetString("PlayerName", _playerName);
+        
         Debug.Log(_playerName);
     }
 
@@ -34,6 +35,7 @@ public class StartBtn : MonoBehaviour
         if (_playerName.Length > 0)
         {
             SceneManager.LoadScene("MainScene");
+            InputName();
         }
         
     }

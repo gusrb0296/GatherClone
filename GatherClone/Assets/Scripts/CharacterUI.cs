@@ -11,6 +11,8 @@ public class CharacterUI : MonoBehaviour
     {
         //TextMeshProUGUI PlayerName = GetComponent<TextMeshProUGUI>();
         textMeshPro.text = PlayerPrefs.GetString("PlayerName");
+
+        Debug.Log(textMeshPro.text);
     }
 
     // Update is called once per frame

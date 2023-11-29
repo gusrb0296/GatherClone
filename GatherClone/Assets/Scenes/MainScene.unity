@@ -832,7 +832,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -875,6 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49829a90bdf94ae4193035bb1763ce05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _controller: {fileID: 1855679235}
   smoothing: 0.1
   player: {fileID: 1855679230}
 --- !u!1 &847809650
@@ -38932,7 +38933,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 0.1, y: 0.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773028481
 MonoBehaviour:
@@ -39010,6 +39011,7 @@ GameObject:
   - component: {fileID: 1855679235}
   - component: {fileID: 1855679236}
   - component: {fileID: 1855679234}
+  - component: {fileID: 1855679237}
   - component: {fileID: 1855679233}
   - component: {fileID: 1855679232}
   m_Layer: 0
@@ -39150,7 +39152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c4e99d01847f141820a91d47fd28ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Anim: {fileID: 364383432}
   _moveSpeed: 250
 --- !u!114 &1855679235
 MonoBehaviour:
@@ -39178,3 +39179,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimRenderer: {fileID: 1855679230}
   _characterRenderer: {fileID: 364383431}
+--- !u!114 &1855679237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855679229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d464c5539b31e3b4ab2fe0a548d30ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 364383432}
