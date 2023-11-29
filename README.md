@@ -31,3 +31,15 @@ ___
 이전에는 PlayerInputController.cs에 주석처리 해둔,
 OnMove 함수에다가 MoveINput 값이 0일 때 멈추고
 아니면 이동한 것으로 판단했었습니다.
+
+___
+시작 Scene에서 텍스트를 PlayerPrefs에 저장한 뒤에
+메인 Scene에서 해당 텍스트를 불러와 넣어두었는데,
+저장한 값은 사라지고 빈 값이었습니다.
+
+PlayerPrefs을 찾아보고 저장하는 것이라 이해했는데
+씬이 넘어가면 이것 또한 사라지는 건지 궁금합니다.
+
+그래서 이걸 DontDestroyOnLoad에 넣어서 써야하는 건가 생각했습니다.
+그러면 어떤 오브젝트에 이 텍스트를 넣어서 DontDestroyOnLoad에 넣어야 할지
+GameManager를 만들어서 DontDestroyOnLoad에 넣어야 할지 잘 모르겠습니다.
